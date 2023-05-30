@@ -12,10 +12,6 @@ eureka:
     lease-expiration-duration-in-seconds: 30
   client:
     lease.duration: 30
-    eureka-server-port: 8761
-    register-with-eureka: true
-    fetchRegistry: true
-
 
 
 management:
