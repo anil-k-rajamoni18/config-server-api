@@ -4,5 +4,5 @@ greet:
 
 mydb:
   host: 127.0.0.1
-  port:3096
-  connection-string: db://ak@localhost:3096
+  port: 3096
+  connection-string: https://ak@dblocal.com
