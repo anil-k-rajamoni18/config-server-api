@@ -1,0 +1,8 @@
+greet:
+  message: Hey Hi Hello World Welcome to Spring Cloud Config server for centralized server for managing all configuration
+
+
+mydb:
+  host: 127.0.0.1
+  port:3096
+  connection-string: db://ak@localhost:3096
