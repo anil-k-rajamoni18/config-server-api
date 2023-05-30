@@ -8,7 +8,6 @@ server:
 
 eureka:
   instance:
-    hostname: test-service
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 30
   client:
@@ -16,8 +15,6 @@ eureka:
     eureka-server-port: 8761
     register-with-eureka: true
     fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
 
 
 
