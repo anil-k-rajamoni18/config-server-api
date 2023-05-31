@@ -23,7 +23,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: '8'
+        include: '*'
       base-path: /manage
   endpoint:
     health:
