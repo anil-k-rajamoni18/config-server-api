@@ -1,21 +1,28 @@
-greet:
-  message: Hello , Am from test service.
+spring:
+  application:
+    name: test-service
+  config:
+    import: "classpath:META-INF/build-info.properties"
+
+server.port: 1122
 
 
-server:
-  port: 1122
-  
-
-eureka:
-  instance:
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 30
-  client:
-    lease.duration: 30
-
+info:
+    name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"
 
 management:
   endpoints:
     web:
-      exposure.include: '*'
+      exposure:
+        include: 'info,beans,health'
       base-path: /manage
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: false
+    build:
+      enabled: false
