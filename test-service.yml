@@ -1,9 +1,11 @@
-greet:
-  message: Hello , Am from test service.
+spring:
+  config:
+    import: "classpath:META-INF/build-info.properties"
 
 
-server:
-  port: 1122
+greet.message: "Hey Hi Welcome to Spring Cloud Config Server World... :) - from main branch"
+
+server.port: 1122
   
 
 eureka:
@@ -14,7 +16,22 @@ eureka:
     lease.duration: 30
 
 
+info:
+    name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"
+
 management:
   endpoints:
     web:
-      exposure.include: *
+      exposure:
+        include: '8'
+      base-path: /manage
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+    build:
+      enabled: true
