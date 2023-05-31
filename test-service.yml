@@ -6,6 +6,7 @@ spring:
 
 server.port: 1122
 
+greet.message: "Hey hi Welcome to Spring Cloud Config Server World... :)"
 
 info:
     name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"
