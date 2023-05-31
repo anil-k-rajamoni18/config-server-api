@@ -22,7 +22,7 @@ management:
       show-details: always
   info:
     env:
-      enabled: true
+      enabled: false
     java:
       enabled: false
     build:
