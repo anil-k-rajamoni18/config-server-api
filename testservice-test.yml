@@ -15,10 +15,3 @@ management:
   endpoint:
     health:
       show-details: always
-  info:
-    env:
-      enabled: true
-    java:
-      enabled: true
-    build:
-      enabled: true
