@@ -1,12 +1,10 @@
 spring:
-  application:
-    name: test-service
   config:
     import: "classpath:META-INF/build-info.properties"
 
 server.port: 1122
 
-greet.message: "Hey hi Welcome to Spring Cloud Config Server World... :)"
+greet.message: "Hey Hi Welcome to Spring Cloud Config Server World... :) - from feature branch"
 
 info:
     name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"
@@ -24,6 +22,6 @@ management:
     env:
       enabled: true
     java:
-      enabled: false
+      enabled: true
     build:
-      enabled: false
+      enabled: true
