@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: test-service
+  config:
+    import: "classpath:META-INF/build-info.properties"
+
+server.port: 1133
+
+greet.message: "Hey hi Welcome to Spring Cloud Config Server World... :) - integration branch test file"
+
+info:
+    name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"
+
