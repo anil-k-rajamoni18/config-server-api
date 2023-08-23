@@ -1,7 +1,7 @@
-
 server.port: 1122
-
-# greet.message: "Hey hi Welcome to Spring Cloud Config Server World... :) - test branch"
+greet:
+  env: dev
+  message: "Hey hi Welcome to Spring Cloud Config Server World... :) - test branch"
 
 info:
     name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"

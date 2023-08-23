@@ -1,0 +1,17 @@
+server.port: 1122
+greet:
+  env: test
+  message: "Hey hi Welcome to Spring Cloud Config Server World... :) - test branch"
+
+info:
+    name: "Spring Cloud Discovery Service Registry is Running on : ${build.version}"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'info,beans,health'
+      base-path: /manage
+  endpoint:
+    health:
+      show-details: always
